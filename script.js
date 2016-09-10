@@ -2,8 +2,48 @@ function initMap() {
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
-    center: {lat: 37.784701, lng: -122.397174} //37.784701, -122.397174
+    zoom: 12,
+    center: {lat: 37.784701, lng: -122.397174}, //37.784701, -122.397174,
+    styles: [
+      {
+        featureType: 'all',
+        stylers: [
+          { saturation: -30 }
+        ]
+      }, {
+        featureType: 'road',
+        elementType: 'geometry',
+        stylers: [
+          {saturation: 100} ,
+          {hue: '#FB3C95'}
+        ]
+      }, {
+        featureType: 'poi.park',
+        elementType: 'geometry',
+        stylers: [
+          {saturation: 100} ,
+          {hue: '#82F41E'}
+        ]
+      },{
+        featureType: 'water',
+        elementType: 'geometry',
+        stylers: [
+          { hue: '#22CCCC' }
+        ]
+      },{
+        featureType: 'poi.business',
+        elementType: 'geometry',
+        stylers: [
+          {saturation: 100} ,
+          { hue: '#FBC43C' }
+        ]
+      },{
+        featureType: 'landscape',
+        elementType: 'geometry',
+        stylers: [
+          {hue: '#FBC43C'}
+        ]
+      } ]
   });
   directionsDisplay.setMap(map);
   document.getElementById('submit').addEventListener('click', function() {
