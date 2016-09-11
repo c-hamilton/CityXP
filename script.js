@@ -75,7 +75,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   }
 
   directionsService.route({
-    origin: {lat: 37.784701, lng: -122.397174}, //37.759790, -122.426846
+    origin: {lat: 37.760355, lng: -122.426432}, //37.760355, -122.426432
     destination: document.getElementById('end').value,
     waypoints: waypts,
     optimizeWaypoints: true,
