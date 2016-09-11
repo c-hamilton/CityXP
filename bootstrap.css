@@ -3577,8 +3577,9 @@ tbody.collapse.in {
   outline: 0;
 }
 .dropdown-menu {
+  line-height: 30px;
   position: absolute;
-  top: 0;
+  top: 10;
   right: 0;
   z-index: 1000;
   display: none;
