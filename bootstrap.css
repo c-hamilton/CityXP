@@ -109,7 +109,9 @@ dfn {
 }
 h1 {
   margin: .67em 0;
-  font-size: 2em;
+  font-size: 18px;
+  color: #FFFFFF;
+  
 }
 mark {
   color: #000;
@@ -1133,8 +1135,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+  color: #9b9b9b;
+  background-color: #FF585C;
 }
 input,
 button,
