@@ -171,6 +171,7 @@ textarea {
   color: inherit;
 }
 button {
+  padding-left: 20px;
   overflow: visible;
 }
 button,
